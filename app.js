@@ -33,8 +33,8 @@ function guardaDatos(user){
 firebase.database().ref("mail")
 .on("child_added",function(s){
 	var user = s.val();
-	$("#root").append("<img src='"+user.foto+"' alt="" />")
-});
+	$("#root").append("<img src='"+user.foto+"'/>");
+})
 
 
 //Escribir en la base de datos
