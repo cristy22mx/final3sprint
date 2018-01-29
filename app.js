@@ -9,7 +9,7 @@ $('#login').click(function(){
 		console.log(result.user);
 		guardaDatos(result.user);
 		$('#login').hide();
-		$('#root').append("<img src='"+result.user.photoURL+"''/>")
+		$('#root').append("<img src='"+result.user.photoURL+"''/>");
 
 	});	
 });	
